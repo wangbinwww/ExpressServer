@@ -1,19 +1,19 @@
-/*
-最简单的一个伺服器
-node server.js 启动伺服器
-可访问端口
+/*********************************************************/
+// 最简单的一个伺服器
+// node server.js 启动伺服器
+// 可访问端口
 
-get方式:
-url:  http://127.0.0.1:3000
+// get方式:
+// url:  http://127.0.0.1:3000
 
-post方式
-url:  http://127.0.0.1:3000
-带json格式参数
-{
-    "name": "张三",
-    "age": "18"
-}
-*/
+// post方式
+// url:  http://127.0.0.1:3000
+// 带json格式参数
+// {
+//     "name":"张三",
+//     "age":"18"
+// }
+/***********************************************************/
 
 const express = require('express')
 const bodyParser = require('body-parser')
@@ -28,6 +28,31 @@ const jwt = require('jsonwebtoken')
 const {
     ObjectID
 } = require('mongodb')
+
+//建立一个 Schema(架构 模式) 类结构体的东西
+
+var UserSchema = new mongoose.Schema({
+    name: String,
+    email: {
+        type: String,
+        //是否需要
+        required: true,
+        //去掉空格
+        trim: true,
+        //最小单位
+        minlength: 1,
+        //是否可以重复
+        unique: true,
+        //验证器  是否是email
+        validate: {
+            validator: (value) => {
+                validator.isEmil(value)
+            },
+            message: `${value}不是邮件格式`
+        }
+
+    }
+})
 
 var app = express();
 app.use(bodyParser.json());
