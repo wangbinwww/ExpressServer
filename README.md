@@ -2,7 +2,7 @@
 
 本项目可通过标准 API 来获取天气信息，将天气存储到 mogodb 里。
 
-by [wangbin](https://www.baidu.com)
+by [wangbin](http://iotworx.cn:17001/anyglass/projects/kpiworx/default.kpix#dashboard=Public%5c%E5%A4%A9%E6%B0%94%E6%83%85%E5%86%B5)
 
 ## **最新版本: v1.0 **
 
@@ -10,7 +10,7 @@ by [wangbin](https://www.baidu.com)
 
 ## 文档地址
 
-- [项目文档](https://www.baidu.com)
+- [项目文档](https://www.seniverse.com/docs)
 
 ## 初始化项目
 
@@ -22,7 +22,7 @@ by [wangbin](https://www.baidu.com)
 
 **发现任何问题欢迎帮忙完善。**
 
-- [接口协议-API](中兴克拉 MQTT V2.0.pdf)
+- [接口协议-API](https://www.seniverse.com/api)
 
 ---
 
