@@ -1,0 +1,42 @@
+{
+    "posts": [{
+            "ID": 1,
+            "beijing": {
+                "NowURL": "https://api.seniverse.com/v3/weather/now.json?key=m6pg9iohdag408lr&location=beijing&language=zh-Hans&unit=c",
+                "Day3URL": "https://api.seniverse.com/v3/weather/daily.json?key=m6pg9iohdag408lr&location=beijing&language=zh-Hans&unit=c&start=0&days=3"
+            }
+        },
+        {
+            "ID": 2,
+            "shanghai": {
+                "NowURL": "https://api.seniverse.com/v3/weather/now.json?key=m6pg9iohdag408lr&location=shanghai&language=zh-Hans&unit=c",
+                "Day3URL": "https://api.seniverse.com/v3/weather/daily.json?key=m6pg9iohdag408lr&location=shanghai&language=zh-Hans&unit=c&start=0&days=3"
+            }
+        },
+        {
+            "ID": 3,
+            "guangzhou": {
+                "NowURL": "https://api.seniverse.com/v3/weather/now.json?key=m6pg9iohdag408lr&location=guangzhou&language=zh-Hans&unit=c",
+                "Day3URL": "https://api.seniverse.com/v3/weather/daily.json?key=m6pg9iohdag408lr&location=guangzhou&language=zh-Hans&unit=c&start=0&days=3"
+            }
+        },
+        {
+            "ID": 4,
+            "xian": {
+                "NowURL": "https://api.seniverse.com/v3/weather/now.json?key=m6pg9iohdag408lr&location=xian&language=zh-Hans&unit=c",
+                "Day3URL": "https://api.seniverse.com/v3/weather/daily.json?key=m6pg9iohdag408lr&location=xian&language=zh-Hans&unit=c&start=0&days=3"
+            }
+        },
+        {
+            "ID": 5,
+            "tianjin": {
+                "NowURL": "https://api.seniverse.com/v3/weather/now.json?key=m6pg9iohdag408lr&location=tianjin&language=zh-Hans&unit=c",
+                "Day3URL": "https://api.seniverse.com/v3/weather/daily.json?key=m6pg9iohdag408lr&location=tianjin&language=zh-Hans&unit=c&start=0&days=3"
+            }
+        }
+    ],
+    "user": {
+        "name": "typicode"
+    },
+    "count": 1
+}

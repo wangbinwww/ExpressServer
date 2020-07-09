@@ -1,0 +1,34 @@
+{
+  "name": "weather",
+  "description": "本项目可通过标准 API 来获取天气信息，将天气存储到 Mongodb 里。",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "lowdb": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "moment-timezone": "^0.5.31",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.22",
+    "validator": "^13.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangbinwww/weather.git"
+  },
+  "author": "wangbin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangbinwww/weather/issues"
+  },
+  "homepage": "https://github.com/wangbinwww/weather#readme"
+}
