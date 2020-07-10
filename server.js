@@ -32,7 +32,6 @@ const {
 //建立一个 Schema(架构 模式) 类结构体的东西
 
 var UserSchema = new mongoose.Schema({
-    name: String,
     email: {
         type: String,
         //是否需要
@@ -51,41 +50,35 @@ var UserSchema = new mongoose.Schema({
             message: `${value}不是邮件格式`
         }
 
+    },
+    password: {
+        type: String,
+        required: true,
+        minlength: 6
+    },
+    name: {
+        type: String,
+        required: true,
+        minlength: 1
+    },
+    phone: {
+        type: String,
+        required: true,
+        minlength: 11
+    },
+    time: {
+        type: String,
+        required: true,
+        minlength: 11
     }
+
 })
 
 var app = express();
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-    console.log('收到GET请求:');
-    console.log(moment().format('YYYY-MM-DD HH:mm:ss SSS Z A'));
-    res.status(200).json({
-        message: "欢迎访问 GET API !"
-    })
-})
 
-app.post('/', function (req, res) {
-    const person = {
-        name: req.body.name,
-        age: req.body.age
-    }
-    console.log('收到post请求:');
-    console.log(req.body);
-    console.log(moment().format('YYYY-MM-DD HH:mm:ss SSS Z A'));
-    //res.send('Got a POST request')
-    res.status(200).json({
-        message: "欢迎访问 POST API !"
-    })
-})
 
-app.put('/user', function (req, res) {
-    res.send('Got a PUT request at /user')
-})
-
-app.delete('/user', function (req, res) {
-    res.send('Got a DELETE request at /user')
-})
 
 app.listen(port, () => {
     console.log(moment().format('YYYY-MM-DD HH:mm:ss SSS Z A'));
